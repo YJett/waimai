@@ -5,9 +5,9 @@ sky:
     port: 3306
     database: sky_take_out
     username: root
-    password: 12345678
+    password: ${DB_PASSWORD}  # 从环境变量中读取
   alioss:
     endpoint: oss-cn-beijing.aliyuncs.com
-    access-key-id: LTAI5tC5soHHgy9nvLphEy9Q
-    access-key-secret: ZmmrY2XLfVmp4mTl8o4XsDMGKbq5ou
+    access-key-id: ${ALIOSS_ACCESS_KEY_ID}
+    access-key-secret: ${ALIOSS_ACCESS_KEY_SECRET}
     bucket-name: sky-itcast-woo
